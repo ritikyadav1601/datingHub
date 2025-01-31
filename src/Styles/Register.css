@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Form Styles */
+.form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+    background: #d9d9d980;
+  }
+  
+  .heading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+
+  }
+  
+  /* Inline Container */
+  .inline-container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Input and Select Styles */
+  .input {
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 15px;
+    border: 1.25px solid #717171;
+    border-radius: 21px;
+    box-sizing: border-box;
+    background: #d9d9d980;
+  }
+  
+  /* Button Styles */
+  .button {
+    width: 25%;
+    margin: 10px auto auto;
+    padding: 17px;
+    background: #ac1639;
+    color: #fff;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+ /* Mobile View Styles */
+@media (max-width: 768px) {
+  .form {
+      padding: 30px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align all items to the left */
+  }
+
+  .inline-container {
+      flex-direction: column; /* Stack the inputs vertically */
+      gap: 15px; /* Set equal gap between fields */
+      width: 100%; /* Make sure the inline-container takes full width */
+  }
+
+  .input {
+      width: 100%; /* Make inputs fill the width */
+      padding: 15px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      border: 1.25px solid #717171;
+      border-radius: 21px;
+      box-sizing: border-box;
+      background: #d9d9d980;
+  }
+
+  .button {
+      width: 100%; /* Full width for button */
+      padding: 15px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 1.4rem;
+  }
+
+  .form {
+      padding: 30px 20px;
+  }
+
+  .input {
+      padding: 12px;
+      font-size: 13px;
+  }
+
+  .button {
+      padding: 12px;
+      font-size: 13px;
+      width: 100%; /* Full width for button on small screens */
+  }
+}

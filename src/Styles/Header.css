@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.main {
+    background-image: url('../Assests/Image1Header.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+.dating{
+    font-family: "Margarine", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.title {
+    color: #FFF86A;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 30px;
+    font-family: 'Madimi One', sans-serif;
+}
+
+
+
+
+.form-outer{
+    margin: 30px 30px 0 30px;
+}
+
+@media (max-width : 480px) {
+    .main{
+        width: 100%;
+    }
+
+    .form{
+        width: 90%;
+        margin:  auto ;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .dating{
+        font-size: 24px;
+    }
+}

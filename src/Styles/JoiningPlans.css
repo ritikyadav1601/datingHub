@@ -1,0 +1,139 @@
+.all {
+    padding: 40px;
+    background-color: black;
+    font-family: "Poppins", serif;
+  font-style: normal;
+}
+
+#header {
+    color: white;
+    font-family: "Margarine", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between cards */
+    align-items: center; /* Align cards vertically */
+    text-align: center;
+    gap: 20px; /* Space between cards */
+    padding: 40px;
+    flex-wrap: nowrap; /* Prevent wrapping for all devices */
+}
+
+
+.card {
+    border: 1px solid black;
+    width: 28%;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Ensures inner content respects the border-radius */
+    background-color: white;
+    /* Adds a default background color for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-titleA {
+    background-color: #A17419;
+    color: white;
+    padding: 18px;
+    line-height: 30px;
+}
+
+
+.card-titleB {
+    background-color: #B7B7B7;
+    color: white;
+    padding: 18px;
+    line-height: 30px;
+}
+
+.card-titleC {
+    background-color: #D5A500;
+    color: white;
+    padding: 18px;
+    line-height: 30px;
+}
+
+.heading-size {
+    font-size: 26px;
+}
+
+.para-size {
+    font-size: 20px;
+}
+
+.card-content {
+    font-size: 18px;
+    color: #717171;
+    background-color: #D9D9D9;
+}
+
+.content-para {
+    padding: 9px;
+}
+
+.card-bottom {
+    background-color: #AC1639;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+/* Responsive Styles for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-menu {
+        gap: 15px; /* Adjust the gap for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .card {
+        width: 29.3%; /* Same width as the desktop view */
+    }
+}
+
+/* Responsive Styles for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .all{
+        padding: 10px;
+    }
+    .main-menu {
+        gap: 2px; /* Reduce the gap further for smaller screens */
+        padding: 0; /* Reduce padding further */
+    }
+
+    .card {
+        width: 34%; /* Same width as desktop */
+        margin: 10px auto;
+    }
+
+    .card-titleA{
+        padding: 2px;
+    }
+    .card-titleB{
+        padding: 2px;
+    }
+    .card-titleC{
+        padding: 2px;
+    }
+    .heading-size{
+        font-size: 16px;
+    }
+
+    .para-size{
+        font-size: 14px;
+    }
+    .content-para{
+        font-size: 12px;
+    }
+
+    .card-bottom{
+        font-size: 14px;
+        padding: 5px;
+    }
+}

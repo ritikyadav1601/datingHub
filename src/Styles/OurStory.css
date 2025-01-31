@@ -1,0 +1,62 @@
+/* General Styling */
+.header-main {
+    color: white;
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.headerMain h2 {
+    color: #AC1639;
+    font-size: 36px; /* Larger for better prominence */
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.headerMain p {
+    font-size: 24px; /* Subheading font size */
+    color: #D9D9D9; /* Softer color for the subheading */
+    margin: 0 0 20px 0;
+}
+
+.content {
+    margin: 30px auto;
+    text-align: justify; /* Justify text for a polished look */
+    font-size: 20px;
+    line-height: 1.8; /* Adjusted line height for readability */
+    width: 80%; /* Default content width */
+    color: #F5F5F5; /* Softer white for better contrast */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .headerMain h2 {
+        font-size: 28px; /* Adjust heading for tablets */
+    }
+
+    .headerMain p {
+        font-size: 20px; /* Adjust subheading for tablets */
+    }
+
+    .content {
+        font-size: 18px; /* Slightly smaller font size for better fit */
+        width: 90%; /* Increase width to fit the smaller screen */
+        line-height: 1.6; /* Adjust line height for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .headerMain h2 {
+        font-size: 24px; /* Adjust heading for mobile */
+    }
+
+    .headerMain p {
+        font-size: 18px; /* Adjust subheading for mobile */
+    }
+
+    .content {
+        font-size: 16px; /* Further reduce content font size */
+        width: 95%; /* Maximize content area for small screens */
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,126 @@
+/* General Styles */
+.main-page {
+    background-image: url("../Assests/MainImage2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center align all text */
+}
+
+/* Heading Container */
+.heading-container {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Adjust for responsiveness */
+    max-width: 800px; /* Restrict max size */
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.sub-heading {
+    font-size: 28px;
+    margin-top: 5px;
+    color: #f5c6cb; /* Light pink for contrast */
+}
+
+/* Divider */
+.divider {
+    width: 60%;
+    margin: 10px auto;
+    border: 1px dashed #f5c6cb; /* Pink dashed line for aesthetics */
+}
+
+/* Content Container */
+.content-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Adjust for smaller screens */
+    max-width: 1000px; /* Restrict max width */
+    margin: 0 auto;
+    text-align: center; /* Center align all content */
+}
+
+/* Paragraph Text */
+.content-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center; /* Center align paragraph text */
+    color: #f5f5f5; /* Softer white for better readability */
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading-container {
+        width: 95%; /* Adjust heading width */
+        padding: 15px;
+    }
+
+    .main-heading {
+        font-size: 28px; /* Adjust heading font size */
+    }
+
+    .sub-heading {
+        font-size: 24px; /* Adjust subheading font size */
+    }
+
+    .divider {
+        width: 70%; /* Adjust divider width */
+    }
+
+    .content-container {
+        width: 95%; /* Maximize content area for tablets */
+        padding: 15px;
+    }
+
+    .content-paragraph {
+        font-size: 16px; /* Slightly smaller font for tablets */
+        line-height: 1.6; /* Adjust line height */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-container {
+        padding: 10px;
+    }
+
+    .main-heading {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    .sub-heading {
+        font-size: 20px; /* Adjust subheading size */
+    }
+
+    .divider {
+        width: 80%; /* Increase divider width */
+    }
+
+    .content-container {
+        width: 100%; /* Full width for mobile */
+        padding: 10px;
+    }
+
+    .content-paragraph {
+        font-size: 14px; /* Smaller font for mobile */
+        line-height: 1.4; /* Adjust line height */
+    }
+}
