@@ -9,7 +9,7 @@ function AdminPanel() {
 
   // Fetch customers data
   useEffect(() => {
-    fetch("http://localhost:5001/api/customers")
+    fetch(`${process.env.REACT_APP_API_URL}/api/customers`)
       .then((response) => response.json())
       .then((data) => setCustomers(data))
       .catch((err) => console.error("Error fetching data:", err));
@@ -23,7 +23,7 @@ function AdminPanel() {
 
   // Handle Delete
   const handleDelete = (id) => {
-    fetch(`http://localhost:5001/api/customers/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/api/customers/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -43,7 +43,7 @@ function AdminPanel() {
     e.preventDefault();
     
     // Make the PUT request to update the customer
-    fetch(`http://localhost:5001/api/customers/${editCustomer._id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/api/customers/${editCustomer._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
